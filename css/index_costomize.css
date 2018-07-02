@@ -286,6 +286,31 @@ body {
   font-size: 22px;
 }
 
+.price_bottom {
+  margin-bottom: 20px;
+}
+
+.base_price {
+  color: hsla(0,0%,100%,1.00);
+  font-size: 16px;
+  text-decoration: line-through;
+  text-align: center;
+}
+
+.new_price {
+  color: hsla(0,0%,100%,1.00);
+  font-family: "Helvetica Neue", "Segoe UI", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+  font-size: 24px;
+  line-height: 2em;
+  text-align: center;
+}
+
+.price_koumoku {
+  color: hsla(0,0%,100%,1.00);
+  font-family: "Helvetica Neue", "Segoe UI", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+  font-size: 14px;
+}
+
 @media (max-width:320px){
 
 .parallax_h1 {
@@ -520,4 +545,8 @@ body {
 }
 
 @media (max-width:1024px) and (min-width:769px){
+}
+.price_title {
+  font-size: 20px;
+  text-align: center;
 }
