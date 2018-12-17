@@ -320,6 +320,42 @@ body {
   margin-bottom: 30px;
 }
 
+.text_effect1 {
+  text-shadow: 1px 1px 1px hsla(0,0%,0%,0.70);
+}
+
+.zip {
+  width: 20%;
+  display: inline-block;
+}
+
+.text_shadow {
+  text-shadow: 1px 1px 1px hsla(0,0%,0%,1.00);
+}
+
+.nav_bn {
+  float: left;
+  height: 50px;
+  margin-top: 5px;
+}
+
+.margin_left10 {
+  margin-left: 10px;
+}
+
+.read-text {
+  font-size: 13px;
+  line-height: 1.4em;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.margin_botoom10 {
+  margin-bottom: 10px;
+}
+
 @media (max-width:320px){
 
 .parallax_h1 {
