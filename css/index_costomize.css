@@ -337,6 +337,7 @@ body {
   float: left;
   height: 50px;
   margin-top: 5px;
+  width: 115px;
 }
 
 .margin_left10 {
@@ -367,10 +368,29 @@ body {
 
 .price_text1 {
   font-size: 21px;
+  text-align: center;
+  color: hsla(0,0%,50%,1.00);
 }
 
 .price_text2 {
   font-size: 31px;
+  text-align: center;
+}
+
+.top_ico_wrapper {
+  width: 278px;
+}
+
+.ico_padding {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.ico_cyousei {
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 @media (max-width:320px){
