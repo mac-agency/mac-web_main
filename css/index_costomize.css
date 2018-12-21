@@ -401,6 +401,25 @@ body {
   line-height: 1.4em;
 }
 
+.sitemap_midashi {
+  font-size: 23px;
+  line-height: 2em;
+}
+
+.sitemap_list {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 95%;
+}
+
+.sitemap_text {
+  line-height: 3em;
+  background-color: hsla(0,0%,90%,1.00);
+  padding-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 @media (max-width:320px){
 
 .parallax_h1 {
