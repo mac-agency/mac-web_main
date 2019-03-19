@@ -131,12 +131,11 @@ $mailFooterDsp = 0;
 $mailSignature = <<< FOOTER
 
 ──────────────────────
-株式会社○○○○　佐藤太郎
-〒150-XXXX 東京都○○区○○ 　○○ビル○F　
-TEL：03- XXXX - XXXX 　FAX：03- XXXX - XXXX
-携帯：090- XXXX - XXXX 　
-E-mail:xxxx@xxxx.com
-URL: http://www.php-factory.net/
+有限会社マックエージェンシー
+〒954-0051 新潟県見附市本所1-25-19　
+TEL：090- 7289 - 4281 　
+E-mail:info@mac-agency.com
+URL: https://mac-agency.com/
 ──────────────────────
 
 FOOTER;
@@ -635,7 +634,7 @@ function refererCheck($Referer_check,$Referer_check_domain){
 	}
 }
 function copyright(){
-	echo '<a style="display:block;text-align:center;margin:15px 0;font-size:11px;color:#aaa;text-decoration:none" href="http://www.php-factory.net/" target="_blank">- PHP工房 -</a>';
+	echo '<a style="display:block;text-align:center;margin:15px 0;font-size:11px;color:#aaa;text-decoration:none" href="http://www.php-factory.net/" target="_blank">- mac-agency -</a>';
 }
 //----------------------------------------------------------------------
 //  関数定義(END)

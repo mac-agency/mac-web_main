@@ -53,22 +53,24 @@ input[type="text"], textarea {
 	display:block;
 }
 input[type="submit"], input[type="reset"], input[type="button"] {
-	display:block;
-	width:100%;
-	height:40px;
+  display: block;
+  width: 100%;
+  height: 40px;
 }
 }
 </style>
+<link href="form.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div id="formWrap">
   <h3>web制作お申込み</h3>
   <p>下記フォームに必要事項を入力後、確認ボタンを押してください。</p>
+  <p class="botton"><a class="text_white" href="../index.html">HOMEへ戻る</a></p>
   <form method="post" action="mail.php">
     <table class="formTable">
       <tr>
         <th>お申込みweb制作</th>
-        <td><select name="ご用件">
+        <td><select  class="select1" name="ご用件">
             <option value="">選択してください</option>
             <option value="コーポレートサイト">コーポレートサイト</option>
             <option value="ランディングページ">ランディングページ</option>
@@ -77,7 +79,7 @@ input[type="submit"], input[type="reset"], input[type="button"] {
       </tr>
       <tr>
         <th>お名前</th>
-        <td><input size="20" type="text" name="お名前" /> ※必須</td>
+        <td><input size="20" type="text" name="お名前"  /> ※必須</td>
       </tr>
       <tr>
         <th>電話番号（半角）</th>
@@ -98,18 +100,24 @@ input[type="submit"], input[type="reset"], input[type="button"] {
           <input type="radio" name="手配" value="手配は必要ない" /> 手配は必要ない </td>
       </tr>
       <tr>
+        <th>ドメイン</th>
+        <td><input type="radio" name="ドメイン手配" value="手配をお願いする" /> 手配をお願いする　
+          <input type="radio" name="ドメイン手配" value="手配は必要ない" /> 手配は必要ない　 </td>
+      </tr>
+      <tr>
         <th>ドメインの種類</th>
         <td><input type="radio" name="ドメイン" value="com" /> .com　
-          <input type="radio" name="ドメイン" value="net" /> .net 
-        <input type="radio" name="ドメイン" value="co" /> .co.jp </td>
+          <input type="radio" name="ドメイン" value="net" /> .net　 
+        <input type="radio" name="ドメイン" value="co" /> .co.jp　 
+        <input type="radio" name="ドメイン" value="other" /> その他　<span class="remarks">※ドメイン依頼する場合</span> </td>
       </tr>
       <tr>
         <th>希望ドメイン名　第1候補</th>
-        <td><input size="25" type="text" name="ドメイン名1" /> アルファベット小文字で</td>
+        <td><input size="25" type="text" name="ドメイン名1" /> アルファベット小文字で <span class="remarks">※ドメイン依頼する場合</span> </td>
       </tr>
       <tr>
         <th>希望ドメイン名　第2候補</th>
-        <td><input size="25" type="text" name="ドメイン名2" /> アルファベット小文字で</td>
+        <td><input size="25" type="text" name="ドメイン名2" /> アルファベット小文字で <span class="remarks">※ドメイン依頼する場合</span> </td>
       </tr>
       <tr>
         <th>サイトを知ったきっかけ</th>
@@ -122,7 +130,7 @@ input[type="submit"], input[type="reset"], input[type="button"] {
       </tr>
     </table>
     <p align="center" class="">
-      <input type="submit" value="　 確認 　" />　<input type="reset" value="リセット" />
+      <input type="submit" value="　 確認 　" class="botton" />　<input type="reset" class="botton" value="リセット" />
     </p>
   </form>
   <p>※IPアドレスを記録しております。いたずらや嫌がらせ等はご遠慮ください</p>

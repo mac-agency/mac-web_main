@@ -99,7 +99,7 @@ height: 100%;
 
 .bn_biglink {
   color: hsla(0,0%,100%,1.00);
-  font-size: 19px;
+  font-size: 14px;
   border-radius: 5px;
   line-height: 0em;
 }
@@ -420,6 +420,25 @@ body {
   margin-bottom: 5px;
 }
 
+.oomoji1 {
+  font-size: 29px;
+}
+
+.oomoji2 {
+  font-size: 44px;
+  color: #F63134;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #FAFAFA;
+}
+
+.simbol_width {
+  width: 210px;
+}
+
+.kingaku_midashi {
+  font-size: 31px;
+}
+
 @media (max-width:320px){
 
 .parallax_h1 {
@@ -596,6 +615,13 @@ body {
   padding-top: 7px;
   padding-left: 10px;
   max-width: 165px;
+}
+
+.bn_biglink {
+  color: hsla(0,0%,100%,1.00);
+  font-size: 15px;
+  border-radius: 5px;
+  line-height: 0em;
 }
 }
 
