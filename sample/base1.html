@@ -319,6 +319,8 @@
 		<div class="container">
 			<p>マテリアルボックス</p>
 			<img class="materialboxed" width="300" src="images/slide2.jpg">
+			<img class="materialboxed" width="300" src="images/slide2.jpg">
+			<img class="materialboxed" width="300" src="images/slide2.jpg">
 	</div>
 	
 	<div class="container">
@@ -440,6 +442,39 @@
     </div>
     <div class="parallax"><img src="../top_img2.jpg" alt="皆様の末永いの健康を願って日々取り組んでいます"></div>
     <div class="parallax pc_non"><img class="retina" src="../top_img_sm2.jpg" alt="皆様の末永いの健康を願って日々取り組んでいます"></div>
+  </div>
+	
+	  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
   </div>
   <div class="section_margin">
     <div class="container">
@@ -786,6 +821,21 @@ topButton.onclick = function() {
   });
 		
 		M.toast({html: 'I am a toast!'})
+		
+		 document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems, options);
+  });
+
+   var instance = M.Slider.getInstance(elem);
+
+    /* jQuery Method Calls
+      You can still use the old jQuery plugin method calls.
+      But you won't be able to access instance properties.
+
+      $('.dropdown-trigger').dropdown('methodName');
+      $('.dropdown-trigger').dropdown('methodName', paramName);
+    */
 	</script>
 	
 	
