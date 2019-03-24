@@ -1,0 +1,53 @@
+@charset "EUC-JP";
+
+#formWrap h3 {
+  text-align: center;
+  font-family: "¥Ò¥é¥®¥Î³Ñ¥´ Pro W3", "Hiragino Kaku Gothic Pro", "¥á¥¤¥ê¥ª", Meiryo, Osaka, "£Í£Ó £Ð¥´¥·¥Ã¥¯", "MS PGothic", sans-serif;
+  font-style: normal;
+  font-size: 22px;
+}
+
+.botton {
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 13pt;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px 20px;
+  background-color: #06B5B5;
+  color: #FFFFFF;
+  line-height: 1.5em;
+  transition: 3s;
+  -webkit-box-shadow: 2px 2px 1px #A9A9A9;
+  box-shadow: 2px 2px 1px #A9A9A9;
+}
+
+.botton:hover {
+  -webkit-box-shadow: 0px 0px;
+  box-shadow: 0px 0px;
+  -moz-box-shadow: none;
+}
+
+.remarks {
+  color: #797979;
+  font-size: 12px;
+}
+
+.select1 {
+  font-size: 16px;
+  line-height: 1.5em;
+  width: 300px;
+}
+
+a:link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.text_white {
+  color: #FBFBFB;
+}
+
+.text_white:hover {
+  color: #D8D8D8;
+}
