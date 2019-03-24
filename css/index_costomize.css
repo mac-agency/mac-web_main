@@ -439,6 +439,29 @@ body {
   font-size: 31px;
 }
 
+.flow_obi {
+  background-color: hsla(204,70%,70%,1.00);
+  color: hsla(0,0%,100%,1.00);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Helvetica Neue", "Segoe UI", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+  font-size: 15px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.okagesama {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 30px;
+  color: #24A69A;
+  font-weight: bold;
+  line-height: 1.4em;
+  text-shadow: 1px 1px 1px #FFFFFF;
+}
+
 @media (max-width:320px){
 
 .parallax_h1 {

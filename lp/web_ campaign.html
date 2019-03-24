@@ -62,6 +62,12 @@
 	<!--個別ページのCSS-->
 <!-- InstanceBeginEditable name="css" --><!-- InstanceEndEditable -->
 	<!-- InstanceBeginEditable name="head" -->
+  <script>
+   document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, options);
+  });
+  </script>
 	<!-- InstanceEndEditable -->
 </head>
 <body>
@@ -110,10 +116,10 @@
     <div class="section no-pad-bot">
       <div class="container"> <br>
         <br>
-        <div class="container">
+        <div class="container top_margin10">
           <div class="row">
           <div class="col m4"><img class="responsive-img simbol_width" alt="20周年エンブレム" src="images/20th.svg"></div>
-          <div class="col m8"><p>おかげさまで20周年<br>
+          <div class="col m8"><p class="okagesama">おかげさまで20周年<br>
 ありがとうの気持ちを込めてキャンペーンを開催！</p></div>
             </div>
         </div>
@@ -132,6 +138,7 @@
     <div class="parallax pc_non"><img src="/images/lp_web_top.jpg" alt="20周年記念"></div>
   </div>
   <hr>
+  
 <div class="section_margin">
   <div class="container">
       <h2 class="section_midashi">ホームページを手軽に備えてください。</h2>
@@ -146,7 +153,8 @@
           <p class="kingaku_midashi">制作金額</p>
           <img src="images/39000yen.svg" class="responsive-img" alt="39,000円">
           <p class="read-text">オーソドックスな企業webページの制作がこの価格です。
-下層ページ5ページ程度。もちろんお問い合わせフォーム付きです。</p>
+下層ページ5ページ程度。もちろんお問い合わせフォーム付きです。<br>
+様々なwebページに展開可能です。</p>
           </div>
       </div>
     </div>
@@ -159,62 +167,67 @@
         <div class="col s6 offset-s3">
           <p class="kingaku_midashi">制作期間</p>
           <img src="images/1hour.svg" class="responsive-img" alt="1週間">
-          <p class="read-text">製作期間は1週間を基本として、校正直しなど柔軟に対応しております。</p>
+          <p class="read-text">制作期間は1週間を基本として、校正直しなど柔軟に対応しております。</p>
           </div>
       </div>
     </div>
   </div>
   <div class="container section_margin">
-    <table>
-      <thead>
-        <tr>
-          <th><p class="news_midashi">NEWS・お知らせ</p></th>
-          <th class="right-align"><a href="#">ニュース一覧へ</a></th>
-        </tr>
-      </thead>
-      <tbody class="table_text">
-        <tr>
-          <td class="news_table_width">2018.04.15</td>
-          <td>弊社webページを開設いたしました。</td>
-        </tr>
-        <tr>
-          <td>2018.04.15</td>
-          <td><a href="#">ご利用の方法をご案内しています。</a></td>
-        </tr>
-        <tr>
-          <td>2018.04.15</td>
-          <td><a href="#">従業員の募集をしております。</a></td>
-        </tr>
-        <tr>
-          <td>2018.04.15</td>
-          <td><a href="#">従業員の募集をしております。</a></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <h2 class="section_midashi">よくあるご質問</h2>
+    
+    <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="large material-icons">live_help</i>お見積りや相談には料金はかかりますか？</div>
+      <div class="collapsible-body"><span>いいえ、無料で承っております。</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="large material-icons">live_help</i>私は個人事業主ですが、依頼できますか？</div>
+      <div class="collapsible-body"><span>はい。もちろん承っております。</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="large material-icons">live_help</i>保守料金は必要でしょうか？</div>
+      <div class="collapsible-body"><span>はい。ご要望によって3,000円/月より承っております。</span></div>
+    </li>
+      <li>
+      <div class="collapsible-header"><i class="large material-icons">live_help</i>関西地方ですがお願いできますか？</div>
+      <div class="collapsible-body"><span>はい。日本全国よりお仕事を承っております。どうぞお気軽にご用命くださいませ。</span></div>
+    </li>
+      <li>
+      <div class="collapsible-header"><i class="large material-icons">live_help</i>打合せのため訪問してもらえますか？</div>
+      <div class="collapsible-body"><span>はい。関東甲信越（東京都、埼玉県、群馬県、千葉県、栃木県、茨城県、長野県、山梨県、神奈川県、新潟県）に限りご訪問可能でございます。また、プラス1万円でお打ち合わせ＆静止画写真撮影（ドローン空撮含む）も承っております。</span></div>
+    </li>
+      <li>
+      <div class="collapsible-header"><i class="large material-icons">live_help</i>お支払い方法について教えてください</div>
+      <div class="collapsible-body"><span>ご請求書をお送りいたしますので、指定の銀行口座へお振込みくださいませ。</span></div>
+    </li>
+  </ul>
+</div>
+  
+  
   <div class="container">
+    <h2 class="section_midashi">はじめてのweb制作にも優しく</h2>
     <div class="section">
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">accessible</i></h2>
-            <h5 class="center">バリアフリー</h5>
-            <p class="light">TFS薬局はバリアフリーによりカラダのご不住な方でも安心して起こし頂けるようにバリアフリー構造となっております。もちろんお付き添いの方にもやさしく、みなさんが安心して快適にお過ごし頂けるような薬局を目指しています。</p>
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">レンタルサーバ手配代行</h5>
+            <p class="light">webページのデータを格納する場所としてサーバを準備しなければなりません。多くの企業様はそれをレンタルしているわけですが、マックエージェンシーでは安価で信頼できるレンタルサーバーを手配させていただいています。（無料）</p>
           </div>
         </div>
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">優秀なスタッフがお手伝い</h5>
-            <p class="light">TFS薬局は薬剤師をはじめ、事務スタッフ・管理スタッフにいたるまで優秀な人材で皆様のお手伝いをしています。特に専門知識を必要とする薬剤師は、医薬品、処方に関することを皆様にわかりやすくご説明できるプロです。毎日の生活に欠かせないお薬のこと、どうぞかかりつけのTFS薬局薬剤師にお任せ下さい。</p>
+            <h5 class="center">ドメイン取得代行</h5>
+            <p class="light">制作したwebページにはアドレスが必要です。そのアドレスが御社の社名や商品名などの文字列（英数字）であると何かと都合がいいものです。マックエージェンシーではそのドメイン取得のための手配・代行をいたしております。（無料）</p>
           </div>
         </div>
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">info_outline</i></h2>
-            <h5 class="center">お気軽にお尋ね下さい</h5>
-            <p class="light">私どもは皆様が健康で楽しい日々をお過ごし頂けるように、医療の観点からと介護福祉の観点から様々なことに取り組んでいます。日頃疑問に思われていることやわからないことなど遠慮なくお尋ね下さい。優秀なスタッフが親切丁寧にご説明しております。</p>
+            <h5 class="center">親切丁寧</h5>
+            <p class="light">インターネットホスティング会社での様々な設定も無料で対応させていただいております。制作過程はもちろんのこと、更新の作業など親切丁寧に取り組まさせていただいております。ご要望等、お気軽にお申し出ください。</p>
           </div>
         </div>
       </div>
@@ -231,58 +244,28 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="../top_img2.jpg" alt="皆様の末永いの健康を願って日々取り組んでいます"></div>
-    <div class="parallax pc_non"><img class="retina" src="../top_img_sm2.jpg" alt="皆様の末永いの健康を願って日々取り組んでいます"></div>
+    <div class="parallax"><img src="../top_img2.jpg" alt="企業様の益々の繁栄を願って日々取り組んでいます"></div>
+    <div class="parallax pc_non"><img class="retina" src="../top_img_sm2.jpg" alt="企業様の益々の繁栄を願って日々取り組んでいます"></div>
   </div>
+  
   <div class="section_margin">
     <div class="container">
-      <h2 class="section_midashi">様々な実績</h2>
+      <h2 class="section_midashi">お申込みは簡単</h2>
     </div>
     <div class="container">
       <div class="row">
         <div class="col s12 m3">
           <div class="card card_radius">
-            <p class="shop_name_obi">上尾店</p>
-            <div class="card-image"> <img class="responsive-img retina" src="../images/branch1.jpg" alt="店舗名">
+            <p class="flow_obi">1.お申込みフォームにご入力</p>
+            <div class="card-image"> <img class="responsive-img retina" src="images/flow1.jpg" alt="必要事項を入力">
               <!--<span class="card-title">Card Title</span>-->
             </div>
             <div class="card-content">
-              <div class="">
-                <address class="shop_address">
-                  ◯◯県◯◯市◯◯町0丁目0番0号
-                </address>
-                <table class="table">
-                  <tbody>
-                    <tr class="table_boader">
-                      <td class="shop_content">営業時間</td>
-                      <td class="shop_content">月〜土 9:00〜18:00</td>
-                    </tr>
-                    <tr class="table_boader">
-                      <td class="shop_content">休日</td>
-                      <td class="shop_content">日曜日、祝日</td>
-                    </tr>
-                    <tr class="table_boader">
-                      <td class="shop_content">電話番号</td>
-                      <td class="shop_content">0000-00-0000</td>
-                    </tr>
-                    <tr class="table_boader">
-                      <td class="shop_content">FAX番号</td>
-                      <td class="shop_content">0000-00-0000</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="row top_margin10">
-                  <div class="col m12">
-                    <div class="col s2"><img src="../images/parking_bycle.svg" alt="駐輪場あり"/></div>
-                    <div class="col s2"><img src="../images/parking_car.svg" alt="駐車場あり"/></div>
-                    <div class="col s2"><img src="../images/wheel_chair.svg" alt="車いす用トイレあり"/></div>
-                    <div class="col s2"><img src="../images/aed_unit.svg" alt="AED装置あり"/></div>
-                  </div>
-                </div>
-              </div>
+              <p>web制作お申込みフォームに必要事項をご入力ください。</p>
+              
             </div>
             <div class="row syousai_padding">
-              <div class="col s12"><a href="#" class="btn btn-block btn-flating bn_biglink bt_padding">店舗の詳細へ</a></div>
+              <div class="col s12"><a href="#" class="btn btn-block btn-flating bn_biglink bt_padding">お申込みフォーム</a></div>
             </div>
             <!--<div class="card-action">
           <a charset="btn btn-block btn-flating bn_biglink bt_padding card-action" href="#">店舗の詳細へ</a>
@@ -291,47 +274,34 @@
         </div>
         <div class="col s12 m3">
           <div class="card card_radius">
-            <p class="shop_name_obi">鴻巣店</p>
-            <div class="card-image"> <img class="responsive-img retina" src="../images/branch2.jpg" alt="店舗名">
+            <p class="flow_obi">2.内容確認して送信</p>
+            <div class="card-image"> <img class="responsive-img retina" src="images/flow2.jpg" alt="確認して送信">
               <!--<span class="card-title">Card Title</span>-->
             </div>
             <div class="card-content">
-              <div class="">
-                <address class="shop_address">
-                  ◯◯県◯◯市◯◯町0丁目0番0号
-                </address>
-                <table class="table">
-                  <tbody>
-                    <tr class="table_boader">
-                      <td class="shop_content">営業時間</td>
-                      <td class="shop_content">月〜土 9:00〜18:00</td>
-                    </tr>
-                    <tr class="table_boader">
-                      <td class="shop_content">休日</td>
-                      <td class="shop_content">日曜日、祝日</td>
-                    </tr>
-                    <tr class="table_boader">
-                      <td class="shop_content">電話番号</td>
-                      <td class="shop_content">0000-00-0000</td>
-                    </tr>
-                    <tr class="table_boader">
-                      <td class="shop_content">FAX番号</td>
-                      <td class="shop_content">0000-00-0000</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="row top_margin10">
-                  <div class="col m12">
-                    <div class="col s2"><img src="../images/parking_bycle.svg" alt="駐輪場あり"/></div>
-                    <div class="col s2"><img src="../images/parking_car.svg" alt="駐車場あり"/></div>
-                    <div class="col s2"><img src="../images/wheel_chair.svg" alt="車いす用トイレあり"/></div>
-                    <div class="col s2"><img src="../images/aed_unit.svg" alt="AED装置あり"/></div>
-                  </div>
-                </div>
-              </div>
+              <p>入力いただいた内容をご確認の上、送信してください。</p>
+              
             </div>
             <div class="row syousai_padding">
-              <div class="col s12"><a href="#" class="btn btn-block btn-flating bn_biglink bt_padding">店舗の詳細へ</a></div>
+              <div class="col s12"><div class="btn btn-block btn-flating bn_biglink bt_padding">ご質問承ります</div></div>
+            </div>
+            <!--<div class="card-action">
+          <a charset="btn btn-block btn-flating bn_biglink bt_padding card-action" href="#">店舗の詳細へ</a>
+        </div>-->
+          </div></div>
+        
+        <div class="col s12 m3">
+          <div class="card card_radius">
+            <p class="flow_obi">3.こちらからメールでご連絡</p>
+            <div class="card-image"> <img class="responsive-img retina" src="images/flow3.jpg" alt="ご確認メール">
+              <!--<span class="card-title">Card Title</span>-->
+            </div>
+            <div class="card-content">
+              <p>送信いただいた内容確認などやご質問へのご回答などこちらから返信メールをお送りいたします。</p>
+              
+            </div>
+            <div class="row syousai_padding">
+              <div class="col s12"><div class="btn btn-block btn-flating bn_biglink bt_padding">ご確認メール</div></div>
             </div>
             <!--<div class="card-action">
           <a charset="btn btn-block btn-flating bn_biglink bt_padding card-action" href="#">店舗の詳細へ</a>
@@ -340,115 +310,87 @@
         </div>
         <div class="col s12 m3">
           <div class="card card_radius">
-            <p class="shop_name_obi">大宮店</p>
-            <div class="card-image"> <img class="responsive-img retina" src="../images/branch3.jpg" alt="店舗名">
+            <p class="flow_obi">4.ご入金くださいませ</p>
+            <div class="card-image"> <img class="responsive-img retina" src="images/flow4.jpg" alt="ご請求書を送付">
               <!--<span class="card-title">Card Title</span>-->
             </div>
             <div class="card-content">
-              <div class="">
-                <address class="shop_address">
-                  ◯◯県◯◯市◯◯町0丁目0番0号
-                </address>
-                <table class="table">
-                  <tbody>
-                    <tr class="table_boader">
-                      <td class="shop_content">営業時間</td>
-                      <td class="shop_content">月〜土 9:00〜18:00</td>
-                    </tr>
-                    <tr class="table_boader">
-                      <td class="shop_content">休日</td>
-                      <td class="shop_content">日曜日、祝日</td>
-                    </tr>
-                    <tr class="table_boader">
-                      <td class="shop_content">電話番号</td>
-                      <td class="shop_content">0000-00-0000</td>
-                    </tr>
-                    <tr class="table_boader">
-                      <td class="shop_content">FAX番号</td>
-                      <td class="shop_content">0000-00-0000</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="row top_margin10">
-                  <div class="col m12">
-                    <div class="col s2"><img src="../images/parking_bycle.svg" alt="駐輪場あり"/></div>
-                    <div class="col s2"><img src="../images/parking_car.svg" alt="駐車場あり"/></div>
-                    <div class="col s2"><img src="../images/wheel_chair.svg" alt="車いす用トイレあり"/></div>
-                    <div class="col s2"><img src="../images/aed_unit.svg" alt="AED装置あり"/></div>
-                  </div>
-                </div>
-              </div>
+              <p>お申込内容に沿ってご請求書を送付させていただきますので、ご入金をお願いいたします。</p>
+              
             </div>
             <div class="row syousai_padding">
-              <div class="col s12"><a href="#" class="btn btn-block btn-flating bn_biglink bt_padding">店舗の詳細へ</a></div>
+              <div class="col s12"><div class="btn btn-block btn-flating bn_biglink bt_padding">いよいよスタート</div></div>
             </div>
             <!--<div class="card-action">
           <a charset="btn btn-block btn-flating bn_biglink bt_padding card-action" href="#">店舗の詳細へ</a>
         </div>-->
           </div>
         </div>
-        <div class="col s12 m3">
-          <div class="card card_radius">
-            <p class="shop_name_obi">船橋店</p>
-            <div class="card-image"> <img class="responsive-img retina" src="../images/branch4.jpg" alt="店舗名">
-              <!--<span class="card-title">Card Title</span>-->
-            </div>
-            <div class="card-content">
-              <div class="">
-                <address class="shop_address">
-                  ◯◯県◯◯市◯◯町0丁目0番0号
-                </address>
-                <table class="table">
-                  <tbody>
-                    <tr class="table_boader">
-                      <td class="shop_content">営業時間</td>
-                      <td class="shop_content">月〜土 9:00〜18:00</td>
-                    </tr>
-                    <tr class="table_boader">
-                      <td class="shop_content">休日</td>
-                      <td class="shop_content">日曜日、祝日</td>
-                    </tr>
-                    <tr class="table_boader">
-                      <td class="shop_content">電話番号</td>
-                      <td class="shop_content">0000-00-0000</td>
-                    </tr>
-                    <tr class="table_boader">
-                      <td class="shop_content">FAX番号</td>
-                      <td class="shop_content">0000-00-0000</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="row top_margin10">
-                  <div class="col m12">
-                    <div class="col s2"><img src="../images/parking_bycle.svg" alt="駐輪場あり"/></div>
-                    <div class="col s2"><img src="../images/parking_car.svg" alt="駐車場あり"/></div>
-                    <div class="col s2"><img src="../images/wheel_chair.svg" alt="車いす用トイレあり"/></div>
-                    <div class="col s2"><img src="../images/aed_unit.svg" alt="AED装置あり"/></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row syousai_padding">
-              <div class="col s12"><a href="#" class="btn btn-block btn-flating bn_biglink bt_padding">店舗の詳細へ</a></div>
-            </div>
-            <!--<div class="card-action">
-          <a charset="btn btn-block btn-flating bn_biglink bt_padding card-action" href="#">店舗の詳細へ</a>
-        </div>-->
           </div>
-        </div>
       </div>
     </div>
+ 
+  
+  <div class="section_margin">
+  <div class="container">
+    <h2 class="section_midashi">わかりやすいコスト</h2>
+    <div class="row">
+    <div class="col s12 m6">
+          <div class="card card_radius">
+            <p class="flow_obi">インターネット業者さんへお支払い頂く金額</p>
+            <div class="card-image"> <img class="responsive-img retina" src="images/sakura.jpg" alt="さくらインターネット">
+              <!--<span class="card-title">Card Title</span>-->
+            </div>
+            <div class="card-content">
+              <p>信頼とコストパフォーマンスの良い「さくらインターネット」をご手配させていただいております。レンタルサーバーとドメインの料金は直接さくらインターネットさんへお支払いいただいております。お支払い票のコンビニ支払いで簡単です。</p>
+              <p>一例</p>
+              <p>○レンタルサーバースタンダードプラン　5,142円/年</p>
+              <p>○ご希望ドメイン .comを使用　1,852円/年</p>
+              <p>合計で　6,994円/年</p>
+              <p>※レンタルサーバー及びドメインのお申込者をお客様名義とする措置です。</p>
+            </div>
+            
+            <!--<div class="card-action">
+          <a charset="btn btn-block btn-flating bn_biglink bt_padding card-action" href="#">店舗の詳細へ</a>
+        </div>-->
+          </div>
+        </div>
+      <div class="col s12 m6">
+          <div class="card card_radius">
+            <p class="flow_obi">当社へお支払い頂く金額</p>
+            <div class="card-image"> <img class="responsive-img retina" src="images/mac-agency.jpg" alt="マックエージェンシー">
+              <!--<span class="card-title">Card Title</span>-->
+            </div>
+            <div class="card-content">
+              <p>webページ制作のコストは企業案内（コーポレートサイト）を基準として設定させていただいております。トップページに下層ページ5ページとして39,000円のサンキュー価格とさせて頂いております。</p>
+              <p>基本制作プラン</p>
+              <p>○サンキュープラン　39,000円</p>
+              <p>○増ページ（1ページあたり）　8,000円</p>
+              <p>○その他ご要望はお見積りを差し上げます。</p>
+              <p>※WordPressの場合は別途料金となります。</p>
+              
+            </div>
+            
+            <!--<div class="card-action">
+          <a charset="btn btn-block btn-flating bn_biglink bt_padding card-action" href="#">店舗の詳細へ</a>
+        </div>-->
+          </div>
+        </div>
+    </div>
+    
+    </div>
   </div>
+  
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h2 class="header col s12 light parallax_h2 white-text">皆様に愛されるマックエージェンシーをを目指して</h2>
+          <h2 class="header col s12 light parallax_h2 white-text">皆様に愛されるマックエージェンシーを目指して</h2>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="../top_img3.jpg" alt="皆様に愛されるマイ薬局・マイ薬剤師を目指して"></div>
-    <div class="parallax pc_non"><img class="retina" src="../top_img_sm3.jpg" alt="皆様に愛されるマイ薬局・マイ薬剤師を目指して"></div>
+    <div class="parallax"><img src="../top_img3.jpg" alt="皆様に愛されるマックエージェンシーを目指して"></div>
+    <div class="parallax pc_non"><img class="retina" src="../top_img_sm3.jpg" alt="皆様に愛されるマックエージェンシーを目指して"></div>
   </div>
 	<!-- InstanceEndEditable -->
 	<!--contents end-->
