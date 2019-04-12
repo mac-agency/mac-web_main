@@ -462,6 +462,13 @@ body {
   text-shadow: 1px 1px 1px #FFFFFF;
 }
 
+.iraishiyou {
+  font-size: 38px;
+  /* [disabled]line-height: 1.5em; */
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 @media (max-width:320px){
 
 .parallax_h1 {
@@ -668,6 +675,13 @@ body {
 
 .sm_non {
   display: none;
+}
+
+.iraishiyou {
+  font-size: 20px;
+  /* [disabled]line-height: 1.5em; */
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 }
 
